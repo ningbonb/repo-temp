@@ -1,0 +1,19 @@
+{
+  "name": "repo-temp",
+  "version": "1.0.0",
+  "description": "repository template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ningbonb/repo-temp.git"
+  },
+  "author": "NingBo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ningbonb/repo-temp/issues"
+  },
+  "homepage": "https://github.com/ningbonb/repo-temp#readme"
+}
