@@ -1,0 +1,47 @@
+{
+  "name": "core",
+  "version": "0.1.0",
+  "description": "repository template",
+  "main": "index.js",
+  "module": "dist/core.esm-bundler.js",
+  "types": "dist/core.d.ts",
+  "unpkg": "dist/core.global.js",
+  "jsdelivr": "dist/core.global.js",
+  "files": [
+    "index.js",
+    "index.mjs",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "node": "./index.mjs",
+        "default": "./dist/core.esm-bundler.js"
+      },
+      "require": "./index.js",
+      "types": "./dist/core.d.ts"
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "buildOptions": {
+    "name": "core",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global",
+      "esm-browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ningbonb/repo-temp.git"
+  },
+  "keywords": [],
+  "author": "NingBo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ningbonb/repo-temp/issues"
+  },
+  "homepage": "https://github.com/ningbonb/repo-temp#readme"
+}
