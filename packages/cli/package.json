@@ -1,0 +1,39 @@
+{
+  "name": "repo-temp",
+  "version": "1.0.0",
+  "description": "Modern standard front-end open source repository template",
+  "bin": {
+    "init": "./scripts/init.mjs"
+  },
+  "files": [
+    "scripts"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "enquirer": "^2.3.2",
+    "execa": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ningbonb/repo-temp.git"
+  },
+  "keywords": [
+    "open-source",
+    "template",
+    "npm",
+    "front-end",
+    "typescript",
+    "jest",
+    "rollup",
+    "prettier",
+    "monorepo",
+    "githooks",
+    "esbuild"
+  ],
+  "author": "NingBo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ningbonb/repo-temp/issues"
+  },
+  "homepage": "https://github.com/ningbonb/repo-temp"
+}

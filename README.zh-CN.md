@@ -4,7 +4,7 @@
 
 <div align="center">
 
-前端仓库模板。
+这个项目提供了一个简单的前端开源模板，可用于快速搭建现代化的开源仓库。它包括常用的前端开发工具和技术，例如 TypeScript、Eslint、git hooks 等，使开发人员能够快速上手并进行自定义。改编自 [Vue3](https://github.com/vuejs/core) 。
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ningbonb/repo-temp/blob/main/LICENSE)
 
@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[English](./README.zh-CN.md) | 简体中文
+[English](./README.md) | 简体中文
 
 </div>
 
@@ -25,6 +25,7 @@
 - Jest
 - ESLint
 - Prettier
+- git hooks
 - ...
 
 ## 用法
@@ -44,7 +45,7 @@ $ npm install --global pnpm
 使用 CLI 安装
 
 ```bash
-正在开发...
+$ npx repo-temp init
 ```
 
 ### dev 
@@ -89,18 +90,6 @@ change log 语法参考 [conventional-changelog-cli](https://www.npmjs.com/packa
 
 ```bash
 $ npm run changelog
-```
-
-### 指定包管理器
-
-在 `package.json` 指定包管理器，目前支持 `pnpm`、`yarn`，空值为 `npm` 。
-
-```json
-{
-  "config": {
-    "packageManager": "pnpm"
-  }
-}
 ```
 
 ### npm 包名称

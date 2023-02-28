@@ -1,55 +1,45 @@
-const DOMGlobals = ["window", "document"];
-const NodeGlobals = ["module", "require"];
+const DOMGlobals = ['window', 'document']
+const NodeGlobals = ['module', 'require']
 
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module'
   },
-  plugins: ["jest"],
+  plugins: ['jest'],
   rules: {
-    "no-debugger": "error",
-    "no-unused-vars": [
-      "error",
-      // we are only using this rule to check for unused arguments since TS
-      // catches unused variables but not args.
-      { varsIgnorePattern: ".*", args: "none" },
-    ],
-    // most of the codebase are expected to be env agnostic
-    "no-restricted-globals": ["error", ...DOMGlobals, ...NodeGlobals],
-    // since we target ES2015 for baseline support, we need to forbid object
-    // rest spread usage in destructure as it compiles into a verbose helper.
-    // TS now compiles assignment spread into Object.assign() calls so that
-    // is allowed.
-    "no-restricted-syntax": [
-      "error",
-      "ObjectPattern > RestElement",
-      "AwaitExpression",
-    ],
+    'no-debugger': 'error',
+    'no-unused-vars': ['error', { varsIgnorePattern: '.*', args: 'none' }],
+    'no-restricted-globals': ['error', ...DOMGlobals, ...NodeGlobals],
+    'no-restricted-syntax': [
+      'error',
+      'ObjectPattern > RestElement',
+      'AwaitExpression'
+    ]
   },
   overrides: [
     // tests, no restrictions (runs in Node / jest with jsdom)
     {
-      files: ["**/__tests__/**", "test-dts/**"],
+      files: ['**/__tests__/**', 'test-dts/**'],
       rules: {
-        "no-restricted-globals": "off",
-        "no-restricted-syntax": "off",
-        "jest/no-disabled-tests": "error",
-        "jest/no-focused-tests": "error",
-      },
+        'no-restricted-globals': 'off',
+        'no-restricted-syntax': 'off',
+        'jest/no-disabled-tests': 'error',
+        'jest/no-focused-tests': 'error'
+      }
     },
     // Node scripts
     {
       files: [
-        "scripts/**",
-        "./*.js",
-        "packages/**/index.js",
-        "packages/size-check/**",
+        'scripts/**',
+        './*.js',
+        'packages/**/index.js',
+        'packages/size-check/**'
       ],
       rules: {
-        "no-restricted-globals": "off",
-        "no-restricted-syntax": "off",
-      },
-    },
-  ],
-};
+        'no-restricted-globals': 'off',
+        'no-restricted-syntax': 'off'
+      }
+    }
+  ]
+}

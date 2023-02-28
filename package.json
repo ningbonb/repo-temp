@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "NingBo",
   "license": "MIT",
   "scripts": {
@@ -63,5 +63,9 @@
   "config": {
     "packageManager": "pnpm",
     "npmName": "core"
+  },
+  "dependencies": {
+    "lint-staged": "^13.1.2",
+    "pnpm": "^7.28.0"
   }
 }
