@@ -3,7 +3,6 @@
 </div>
 
 <div align="center">
-
 This project provides a simple front-end open source template that can be used to quickly build a modern open source warehouse. It includes commonly used front-end development tools and technologies, such as TypeScript, Eslint, git hooks, etc., enabling developers to quickly get started and customize. Adapted from [Vue3](https://github.com/vuejs/core).
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ningbonb/repo-temp/blob/main/LICENSE)

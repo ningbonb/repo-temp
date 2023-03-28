@@ -1,6 +1,6 @@
 {
   "name": "repo-temp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modern standard front-end open source repository template",
   "bin": {
     "init": "./scripts/init.mjs"

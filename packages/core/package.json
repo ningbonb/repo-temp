@@ -35,13 +35,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ningbonb/repo-temp.git"
+    "url": ""
   },
   "keywords": [],
   "author": "NingBo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ningbonb/repo-temp/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/ningbonb/repo-temp#readme"
+  "homepage": ""
 }
